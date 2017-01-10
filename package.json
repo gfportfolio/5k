@@ -1,13 +1,21 @@
 {
-  "name": "polymer-starter-kit",
-  "license": "BSD-3-Clause",
-  "devDependencies": {
-    "eslint": "^3.12.0",
-    "eslint-config-google": "^0.7.1",
-    "eslint-plugin-html": "^1.7.0"
-  },
+  "name": "demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
   "scripts": {
-    "lint": "eslint . --ext js,html; exit 0;",
-    "test": "npm run lint && polymer test"
+    "bower": "bower",
+    "tsc": "tsc",
+    "install": "bower install && tsc",
+    "start": "node serve.js"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "bower": "^1.5.2"
+  },
+  "devDependencies": {
+    "express": "^4.13.3",
+    "typescript": "^1.5.3"
   }
 }
