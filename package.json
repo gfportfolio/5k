@@ -1,21 +1,16 @@
 {
-  "name": "demo",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "bower": "bower",
-    "tsc": "tsc",
-    "install": "bower install && tsc",
-    "start": "node serve.js"
-  },
-  "author": "",
-  "license": "MIT",
-  "dependencies": {
-    "bower": "^1.5.2"
-  },
+  "name": "polymer-starter-kit",
+  "license": "BSD-3-Clause",
   "devDependencies": {
-    "express": "^4.13.3",
-    "typescript": "^1.5.3"
+    "eslint": "^3.19.0",
+    "eslint-config-google": "^0.7.0",
+    "eslint-plugin-html": "^2.0.0",
+    "gulp": "^3.9.1"
+  },
+  "scripts": {
+    "lint": "npm run lint:javascript",
+    "lint:javascript": "eslint . --ext js,html --ignore-path .gitignore",
+    "test": "polymer test",
+    "test:integration": "polymer build # test that psk builds without error with the CLI"
   }
 }
